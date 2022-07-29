@@ -1,4 +1,5 @@
 /*:
+* @target MZ
 * @plugindesc ​v1.0 Censor specific words suitable for a kid-friendly mode.
 * @author codapill
 *
@@ -21,6 +22,7 @@
 * ----------------------------------------------------------------------
 * KidMode v1.0 by codapill
 * Free for both commercial and non-commercial use, with credit.
+* Please do not repost this plugin anywhere.
 * ----------------------------------------------------------------------
 *
 * "Stop right there you #$%! little #$%!!"
