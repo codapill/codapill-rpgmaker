@@ -1,11 +1,11 @@
 /*:
 * @target MZ
-* @plugindesc ​v1.0 Censor specific words suitable for a kid-friendly mode.
+* @plugindesc ​v1.0 Censor specific words suitable for whatever reason.
 * @author codapill
 *
-* @param Kid Mode
+* @param Censor Switch
 * @type Switch
-* @desc Turn this switch ON to enable Kid Mode.
+* @desc Turn this switch ON to enable Censor Mode.
 * @default 0
 *
 * @param Words to Censor
@@ -20,20 +20,20 @@
 *
 * @help
 * ----------------------------------------------------------------------
-* KidMode v1.0 by codapill
+* CensorText v1.0 by codapill
 * Free for both commercial and non-commercial use, with credit.
 * Please do not repost this plugin anywhere.
 * ----------------------------------------------------------------------
 *
 * "Stop right there you #$%! little #$%!!"
-* Wow, what happened there? You must be using codapill_KidMode!
+* Wow, what happened there? You must be using codapill_CensorText!
 * Your solution to censoring words you may not wish to display
 * for whatever reason that may be.
 *
 * How to use this plugin:
 * ----------------------------------------------------------------------
 *
-* 1. Reserve a switch for Kid/Censor Mode in the parameters.
+* 1. Reserve a switch for Censor Mode in the parameters.
 *    You'll need to switch it ON in the game for the plugin to work.
 *
 * 2. Fill in the 'Words to Censor' list. Now, when the censor switch is
@@ -50,10 +50,10 @@
 
 (function() {
 
-    let switchID = parseInt(PluginManager.parameters("codapill_KidMode")["Kid Mode"]);
-    let censoredLanguageList = PluginManager.parameters('codapill_KidMode')['Words to Censor'];
+    let switchID = parseInt(PluginManager.parameters("codapill_CensorText")["Censor Switch"]);
+    let censoredLanguageList = PluginManager.parameters('codapill_CensorText')['Words to Censor'];
     let censoredLanguage = JSON.parse(censoredLanguageList);
-    let censoredSymbols = PluginManager.parameters('codapill_KidMode')['Censored Replacement'];
+    let censoredSymbols = PluginManager.parameters('codapill_CensorText')['Censored Replacement'];
     let addFunction = Game_Message.prototype.add;
 
     Game_Message.prototype.add = function (text) {
