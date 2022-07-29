@@ -37,7 +37,7 @@
 *    You'll need to switch it ON in the game for the plugin to work.
 *
 * 2. Fill in the 'Words to Censor' list. Now, when the censor switch is
-*    set to ON, any words declared that list will be censored.
+*    set to ON, any words declared in that list will be censored.
 *
 * 3. Replace the 'Censored Replacement' field with whatever you wish
 *    to have display instead of the censored words.
